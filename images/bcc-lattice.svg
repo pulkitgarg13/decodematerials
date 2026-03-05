@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!--
+    BCC crystal lattice tile (body-centered cubic)
+    Corner atoms + body-center atom + bond lines
+    Tiles seamlessly to fill the hero background
+  -->
+
+  <!-- Grid edge lines (repeat across tile boundaries) -->
+  <line x1="0" y1="0" x2="80" y2="0"  stroke="rgba(255,255,255,0.10)" stroke-width="0.6"/>
+  <line x1="0" y1="0" x2="0"  y2="80" stroke="rgba(255,255,255,0.10)" stroke-width="0.6"/>
+
+  <!-- Bonds from corners to body-center atom -->
+  <line x1="0"  y1="0"  x2="40" y2="40" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+  <line x1="80" y1="0"  x2="40" y2="40" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+  <line x1="0"  y1="80" x2="40" y2="40" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+  <line x1="80" y1="80" x2="40" y2="40" stroke="rgba(255,255,255,0.07)" stroke-width="0.7"/>
+
+  <!-- Corner atom — only at (0,0); adjacent tiles supply the other corners -->
+  <circle cx="0" cy="0" r="3" fill="rgba(255,255,255,0.22)"/>
+
+  <!-- Body-center atom — slightly larger, blue-tinted to suggest solute/defect -->
+  <circle cx="40" cy="40" r="3.5" fill="rgba(147,197,253,0.28)"/>
+  <!-- Subtle glow ring around body-center -->
+  <circle cx="40" cy="40" r="6" fill="none" stroke="rgba(147,197,253,0.10)" stroke-width="1"/>
+</svg>
