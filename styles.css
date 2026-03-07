@@ -213,7 +213,7 @@ nav {
 }
 
 /* ===== SECTION WRAPPER ===== */
-section { padding: 3.25rem 1.5rem; }
+section { padding: 2.25rem 1.5rem; }
 section:nth-child(even) { background: var(--gray-50); }
 
 .section-inner { max-width: var(--max-w); margin: 0 auto; }
