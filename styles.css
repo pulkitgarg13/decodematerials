@@ -288,6 +288,7 @@ h2 {
 .about-text p {
   margin-bottom: 1rem;
   color: var(--gray-800);
+  text-align: justify;
 }
 
 .about-text p:last-child { margin-bottom: 0; }
@@ -475,6 +476,7 @@ h2 {
   color: var(--gray-600);
   line-height: 1.65;
   margin-bottom: .9rem;
+  text-align: justify;
 }
 
 .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
