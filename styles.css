@@ -594,6 +594,22 @@ h2 {
 .badge-prep { background: var(--gold-light); color: #92400e; }
 .badge-nc   { background: #dcfce7; color: #166534; }
 
+.pub-pdf {
+  display: inline-block;
+  font-size: .67rem;
+  font-weight: 600;
+  padding: .1rem .48rem;
+  border-radius: 10px;
+  margin-left: .4rem;
+  vertical-align: middle;
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  text-decoration: none;
+  transition: background .15s;
+}
+.pub-pdf:hover { background: #dcfce7; color: #14532d; }
+
 /* ===== GALLERY ===== */
 .gallery-grid {
   display: grid;
