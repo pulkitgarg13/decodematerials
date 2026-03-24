@@ -602,13 +602,13 @@ h2 {
   border-radius: 10px;
   margin-left: .4rem;
   vertical-align: middle;
-  background: #f0fdf4;
-  color: #15803d;
-  border: 1px solid #bbf7d0;
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
   text-decoration: none;
   transition: background .15s;
 }
-.pub-pdf:hover { background: #dcfce7; color: #14532d; }
+.pub-pdf:hover { background: #fee2e2; color: #991b1b; }
 
 /* ===== GALLERY ===== */
 .gallery-grid {
