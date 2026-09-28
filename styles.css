@@ -585,6 +585,17 @@ h2 {
   flex-shrink: 0;
 }
 
+.people-avatar-placeholder {
+  width: 260px;
+  height: 260px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.people-avatar-placeholder svg { width: 100%; height: 100%; display: block; }
+
 .people-info { flex: 1; min-width: 0; }
 
 .people-rule {
