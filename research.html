@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DECODE Materials Lab | Pulkit Garg, Ph.D.</title>
-  <meta name="description" content="DECODE Materials Lab – Defect Engineering via Computational Design. Research group of Pulkit Garg, Ph.D., focused on AI/ML-driven alloy design, multiscale modeling, and defect engineering." />
+  <title>Research | DECODE Materials Lab</title>
+  <meta name="description" content="Research thrusts of the DECODE Materials Lab: multiscale modeling, multi-principal element alloys, and nanocrystalline alloys." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -38,8 +38,8 @@
       </div>
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
       <li><a href="people.html">People</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="news.html">News</a></li>
@@ -51,79 +51,106 @@
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
-<div id="top" class="hero">
-  <div class="hero-inner">
-    <h1>Pulkit Garg, Ph.D.</h1>
-    <p class="hero-lab-full"><em>Defect Engineering via Computational Design of Materials</em></p>
-    <p class="hero-title">Assistant Professor | Mechanical, Industrial and Manufacturing Engineering</p>
-    <p class="hero-inst">University of Toledo</p>
-    <div class="hero-links">
-      <a href="mailto:pulkit.garg@utoledo.edu">&#9993; pulkit.garg@utoledo.edu</a>
-      <!-- Update the links below with your actual profile URLs -->
-      <a href="https://scholar.google.com/citations?hl=en&user=DhIp1FIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="#" target="_blank" rel="noopener">ResearchGate</a>
-      <a href="https://www.linkedin.com/in/pulkitgarg1/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
+<div class="page-hero">
+  <h1>Research</h1>
 </div>
 
-<!-- ===== ABOUT THE LAB ===== -->
-<section id="home-about">
-  <div class="section-inner">
-    <div class="section-header"><h2>About the Lab</h2></div>
-    <p style="max-width:820px;">
-      Building on over a decade of expertise in multi-physics and multiscale modeling, I lead the
-      <strong>DECODE (Defect Engineering via Computational Design) Materials Lab</strong> at the
-      University of Toledo, which develops defect-informed computational approaches for designing
-      materials with enhanced properties for applications in aerospace, hypersonic systems, energy,
-      defense and national security, and quantum technologies.
-    </p>
-  </div>
-</section>
-
-<!-- ===== RESEARCH THRUSTS (HOME TEASER) ===== -->
-<section id="home-research" class="section-shaded">
+<!-- ===== RESEARCH ===== -->
+<section id="research">
   <div class="section-inner">
     <div class="section-header">
-      <h2>Research</h2>
       <p class="section-sub">
         The DECODE Materials Lab pursues three interrelated research thrusts centered on
         defect-informed computational design of advanced materials.
       </p>
     </div>
 
-    <div class="research-grid teaser-grid">
+    <div class="research-grid">
 
+      <!-- Thrust 1: Multiscale Modeling Methods -->
       <div class="research-card methods">
         <div class="thrust-num">Thrust 1</div>
         <h3>Multiscale Modeling Methods</h3>
         <p>
           Our research spans quantum to continuum length scales, enabling a comprehensive
           mechanistic understanding of material behavior from individual atoms to engineering
-          components.
+          components. We integrate and extend these methods to tackle problems at the forefront
+          of materials science.
         </p>
-        <a class="thrust-more" href="research.html">Learn more &rarr;</a>
+        <p>
+          We employ <strong>DFT + MD + PFDD</strong> to reveal how interstitial
+          impurities (O, H, C) and chemical disorder govern temperature-dependent dislocation
+          dynamics in refractory MPEAs:enabling design of alloys for aerospace, hypersonic,
+          and nuclear energy applications.
+        </p>
+        <div class="tags" style="margin-bottom:.75rem">
+          <span class="tag tag-purple">DFT (VASP)</span>
+          <span class="tag tag-purple">Molecular Dynamics (LAMMPS)</span>
+          <span class="tag tag-purple">Phase-Field Dislocation Dynamics</span>
+          <span class="tag tag-purple">Kinetic Monte Carlo</span>
+          <span class="tag tag-purple">Dislocation Dynamics</span>
+          <span class="tag tag-purple">BCC Alloys</span>
+        </div>
+        <p style="margin-bottom:.75rem">
+          <strong>Applications:</strong> Aerospace &middot; Hypersonic vehicles &middot;
+          Nuclear energy &middot; Quantum technologies &middot; Energy storage
+        </p>
+        <figure class="card-figure">
+          <img src="images/Fig1.png" alt="DECODE multiscale modeling approach: DFT to MD to PFDD" loading="lazy" />
+          <figcaption>Fig. 1: The DECODE multiscale modeling framework integrating quantum (DFT), atomistic (MC/MD), and mesoscale (PFDD) methods to study and design MPEAs for high-temperature structural applications.</figcaption>
+        </figure>
       </div>
 
+      <!-- Thrust 2: MPEAs -->
       <div class="research-card">
         <div class="thrust-num">Thrust 2</div>
         <h3>Multifunctional Multi-Principal Element Alloys</h3>
         <p>
           MPEAs offer exceptional combinations of thermal stability, mechanical performance, and
-          functional properties inaccessible to conventional alloys.
+          functional properties inaccessible to conventional alloys. We develop a
+          <strong>multi-fidelity Bayesian optimization</strong> framework combining large,
+          low-cost MD datasets with high-accuracy DFT calculations to efficiently navigate the
+          vast compositional landscape and predict new alloys with tailored properties.
         </p>
-        <a class="thrust-more" href="research.html">Learn more &rarr;</a>
+        <p>
+        <div class="tags">
+          <span class="tag">AI / ML</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Bayesian Optimization</span>
+          <span class="tag">DFT</span>
+        </div>
+        <figure class="card-figure">
+          <img src="images/Fig2.png" alt="Multi-fidelity predictive model workflow for accelerated MPEA discovery" loading="lazy" />
+          <figcaption>Fig. 2: Workflow of a multi-fidelity predictive model combining low-cost MD and high-accuracy DFT datasets via Bayesian optimization to accelerate discovery of MPEAs with optimized properties.</figcaption>
+        </figure>
       </div>
 
+      <!-- Thrust 3: Nanocrystalline Alloys -->
       <div class="research-card">
         <div class="thrust-num">Thrust 3</div>
         <h3>Nanocrystalline Alloys for Extreme Environments</h3>
         <p>
           Nanocrystalline metals offer superior strength but suffer from thermal instability
-          driven by high-energy grain boundaries.
+          driven by high-energy grain boundaries. We use <strong>hybrid Monte Carlo / MD
+          simulations</strong> to investigate how multiple solutes (Zr, Ta, Ag, Nb) co-segregate
+          to boundaries and induce amorphous grain boundary complexion transitions that
+          simultaneously enhance strength, ductility, and chemical stability.
         </p>
-        <a class="thrust-more" href="research.html">Learn more &rarr;</a>
+        <p>
+          This work provides design rules for thermally stable nanocrystalline alloys capable
+          of retaining exceptional properties under extreme mechanical and thermal conditions.
+        </p>
+        <div class="tags">
+          <span class="tag">Grain Boundary Complexions</span>
+          <span class="tag">Monte Carlo / MD</span>
+          <span class="tag">Segregation</span>
+          <span class="tag">Nanocrystalline Metals</span>
+          <span class="tag">Extreme Environments</span>
+        </div>
+        <figure class="card-figure">
+          <img src="images/Fig3.png" alt="Enhanced strength and ductility via amorphous grain boundaries in nanocrystalline alloys" loading="lazy" />
+          <figcaption>Fig. 3: Enhanced strength and ductility in multicomponent nanocrystalline alloys through solute segregation-driven amorphous grain boundary formation under extreme conditions.</figcaption>
+        </figure>
       </div>
 
     </div>
