@@ -114,7 +114,8 @@ nav {
 /* ===== HERO ===== */
 .hero {
   background:
-    url('images/hero-crystal.svg') center center / cover no-repeat;
+    linear-gradient(rgba(15,30,50,.82), rgba(15,30,50,.88)),
+    url('images/UToledo-Campus.jpg') center center / cover no-repeat;
   color: var(--white);
   padding: 2.25rem 1.5rem 2.25rem;
   text-align: center;
