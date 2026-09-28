@@ -614,6 +614,7 @@ h2 {
 
 .people-info p.people-label {
   font-size: .7rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: var(--gray-400);
@@ -643,7 +644,10 @@ h2 {
   margin-top: .5rem;
 }
 
-.people-office .profile-links { justify-content: flex-end; }
+.people-office .profile-links {
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .profile-links a {
   display: inline-flex;
@@ -670,7 +674,7 @@ h2 {
   .people-card { flex-direction: column; align-items: center; text-align: center; }
   .people-rule { margin-left: auto; margin-right: auto; }
   .people-office { margin-left: 0; text-align: center; }
-  .people-office .profile-links { justify-content: center; }
+  .people-office .profile-links { align-items: center; }
 }
 
 /* ===== EMPTY STATE (e.g. News) ===== */
