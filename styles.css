@@ -633,7 +633,6 @@ h2 {
 }
 
 .people-info p.people-entry { font-size: .95rem; }
-.people-info p.people-entry.people-edu { font-size: .9rem; }
 
 .people-office {
   flex-shrink: 0;
