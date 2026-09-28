@@ -621,6 +621,8 @@ h2 {
   margin-bottom: .4rem;
 }
 
+.people-info p.people-entry { font-size: 1.15rem; }
+
 .people-office {
   flex-shrink: 0;
   margin-left: auto;
