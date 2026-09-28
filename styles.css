@@ -269,6 +269,11 @@ h2 {
   margin-top: .4rem;
 }
 
+.pub-scholar-note {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ===== ABOUT ===== */
 .about-top {
   display: flex;
