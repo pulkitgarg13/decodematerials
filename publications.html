@@ -65,7 +65,6 @@
         <button class="filter-btn" data-filter="recent">2024–Present</button>
         <button class="filter-btn" data-filter="mid">2020–2023</button>
         <button class="filter-btn" data-filter="early">Pre-2020</button>
-        <button class="filter-btn" data-filter="prep">In Preparation</button>
       </div>
       <div class="pub-count" id="pub-count"></div>
     </div>
@@ -84,50 +83,6 @@
 <script>
 
 const PUBS = [
-  // ── In Preparation ──────────────────────────────────────────────────────────
-  {
-    num: null,
-    authors: "P. Garg, K. Hemker, I.J. Beyerlein",
-    title: "Identifying the role of temperature on higher-order {112} slip system activity in refractory multi-principal element alloys",
-    journal: "In Preparation", vol: "", year: 2025, fa: true, prep: true
-  },
-  {
-    num: null,
-    authors: "P. Garg, A.J. Clarke, I.J. Beyerlein",
-    title: "Oxygen effects on temperature-dependent critical stress for screw dislocation glide in tantalum",
-    journal: "In Preparation", vol: "", year: 2025, fa: true, prep: true
-  },
-  {
-    num: null,
-    authors: "P. Garg, N. Alemazkoor, T.J. Rupert, M. Tootkaboni",
-    title: "Multi-fidelity information fusion for accelerated predictive modeling and optimal design of high entropy alloys",
-    journal: "In Preparation", vol: "", year: 2025, fa: true, prep: true
-  },
-  {
-    num: null,
-    authors: "N.E. Peterson, P. Garg, I.J. Beyerlein, A.J. Clarke",
-    title: "Continuous and discontinuous dynamic recrystallization in BCC refractory multi-principal element alloys",
-    journal: "In Preparation", vol: "", year: 2025, fa: false, prep: true
-  },
-  {
-    num: null,
-    authors: "P. McNutt, P. Garg, I.J. Beyerlein",
-    title: "Phase-field dislocation dynamics modeling of higher-order dislocation slip in W-Re alloy",
-    journal: "In Preparation", vol: "", year: 2025, fa: false, prep: true
-  },
-  {
-    num: null,
-    authors: "D. Magnuson, P. Garg, I.J. Beyerlein, K. Hemker",
-    title: "Temperature-dependent deformation mechanisms in single-crystalline refractory multi-principal element alloys",
-    journal: "In Preparation", vol: "", year: 2025, fa: false, prep: true
-  },
-  {
-    num: null,
-    authors: "N.M. Ventura, J.T. Pürstl, M.R. Jones, C. Frey, L.H. Mills, R. Silverstein, C. Tian, P. Garg, T.E.J. Edwards, W.S. Cunningham, A. Sharma, J.J. Schwiedrzik, X. Maeder, J. Michler, L. Valdevit, M.R. Begley, T.M. Pollock, I.J. Beyerlein, D.S. Gianola",
-    title: "Mechanical properties, activation parameters and dislocation plasticity of the Hf10Mo10Nb35Ta20Ti25 RMPEA at temperatures 200–300 K via single crystal micro-pillar compression",
-    journal: "In Preparation", vol: "", year: 2025, fa: false, prep: true
-  },
-
   // ── Published ────────────────────────────────────────────────────────────────
   {
     num: "J30", year: 2025, fa: false, prep: false,
@@ -320,12 +275,11 @@ function renderPubs(filter) {
   const count = document.getElementById('pub-count');
 
   const filtered = PUBS.filter(p => {
-    if (filter === 'all')    return !p.prep;
-    if (filter === 'first')  return p.fa && !p.prep;
-    if (filter === 'recent') return p.year >= 2024 && !p.prep;
-    if (filter === 'mid')    return p.year >= 2020 && p.year <= 2023 && !p.prep;
-    if (filter === 'early')  return p.year < 2020 && !p.prep;
-    if (filter === 'prep')   return p.prep;
+    if (filter === 'all')    return true;
+    if (filter === 'first')  return p.fa;
+    if (filter === 'recent') return p.year >= 2024;
+    if (filter === 'mid')    return p.year >= 2020 && p.year <= 2023;
+    if (filter === 'early')  return p.year < 2020;
     return true;
   });
 
@@ -333,17 +287,15 @@ function renderPubs(filter) {
 
   list.innerHTML = filtered.map(p => {
     let cls = 'pub-item';
-    if (p.fa)   cls += ' first-author';
-    if (p.prep) cls += ' in-prep';
+    if (p.fa) cls += ' first-author';
 
     const numStr  = p.num ? `<span class="pub-num">[${p.num}]</span> ` : '<span class="pub-num">&#x25AA;</span> ';
     const volStr  = p.vol && p.vol !== '(Accepted)' ? `, ${p.vol}` : '';
     const accStr  = p.vol === '(Accepted)' ? ' <em>(Accepted)</em>' : '';
-    const yearStr = p.prep ? '' : ` (${p.year})`;
+    const yearStr = ` (${p.year})`;
 
     let badges = '';
     if (p.fa)      badges += '<span class="pub-badge badge-fa">1st Author</span>';
-    if (p.prep)    badges += '<span class="pub-badge badge-prep">In Prep</span>';
     if (p.notable) badges += '<span class="pub-badge badge-nc">Nature Comms</span>';
 
     const pdfLink = p.pdf ? `<a href="publications/${p.num}.pdf" target="_blank" rel="noopener" class="pub-pdf"><svg width="11" height="13" viewBox="0 0 11 13" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:3px"><path d="M1 1.5A.5.5 0 0 1 1.5 1H7l3 3v7.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-10Z" fill="currentColor" opacity="0.18"/><path d="M1 1.5A.5.5 0 0 1 1.5 1H7l3 3v7.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-10Z" stroke="currentColor" stroke-width="1" fill="none"/><path d="M7 1v2.5a.5.5 0 0 0 .5.5H10" stroke="currentColor" stroke-width="1" fill="none"/><line x1="3" y1="7" x2="8" y2="7" stroke="currentColor" stroke-width="1" stroke-linecap="round"/><line x1="3" y1="9" x2="6.5" y2="9" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>PDF</a>` : '';
