@@ -114,7 +114,7 @@ nav {
 
 /* ===== HOME BANNER ===== */
 .home-banner {
-  padding: 2rem 1.5rem 3rem;
+  padding: 2rem 1.5rem 1rem;
   text-align: center;
 }
 
@@ -1067,7 +1067,7 @@ footer p + p { margin-top: .4rem; }
 }
 
 .footer-logos img {
-  height: 48px;
+  height: 68px;
   background: var(--white);
   padding: .4rem .8rem;
   border-radius: 6px;
