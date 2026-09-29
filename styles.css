@@ -1070,7 +1070,7 @@ footer p + p { margin-top: .4rem; }
   padding: 1.75rem 1.5rem;
 }
 
-.logo-strip img { height: 84px; }
+.logo-strip img { width: 170px; height: auto; }
 
 /* ===== HAMBURGER BUTTON ===== */
 .nav-hamburger {
