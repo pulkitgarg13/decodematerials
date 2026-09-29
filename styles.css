@@ -222,6 +222,8 @@ section.section-shaded { background: var(--gray-50); }
 
 .section-header { margin-bottom: 2rem; }
 
+#home-about .section-header { text-align: center; }
+
 h2 {
   font-size: 1.65rem;
   font-weight: normal;
