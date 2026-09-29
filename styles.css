@@ -165,7 +165,15 @@ nav {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+}
+
+.home-title-full {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  color: var(--gray-600);
+  font-style: italic;
+  margin-bottom: 1.25rem;
 }
 
 .home-title-inst,
