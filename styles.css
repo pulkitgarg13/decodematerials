@@ -1056,6 +1056,22 @@ footer {
 footer a { color: #93c5fd; }
 footer p + p { margin-top: .4rem; }
 
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logos img {
+  height: 48px;
+  background: var(--white);
+  padding: .4rem .8rem;
+  border-radius: 6px;
+}
+
 /* ===== HAMBURGER BUTTON ===== */
 .nav-hamburger {
   display: none;
