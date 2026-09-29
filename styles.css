@@ -527,6 +527,7 @@ h2 {
 
 /* ===== HOME: RESEARCH THRUST TEASERS ===== */
 .teaser-grid { grid-template-columns: repeat(3, 1fr); }
+.teaser-grid .research-card h3 { text-align: center; }
 
 .thrust-more {
   display: inline-block;
