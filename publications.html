@@ -66,7 +66,6 @@
     <div class="pub-meta">
       <div class="pub-filter">
         <button class="filter-btn active" data-filter="all">All (32)</button>
-        <button class="filter-btn" data-filter="first">First Author (17)</button>
         <button class="filter-btn" data-filter="recent">2024–Present</button>
         <button class="filter-btn" data-filter="mid">2020–2023</button>
         <button class="filter-btn" data-filter="early">Pre-2020</button>
@@ -293,7 +292,6 @@ function renderPubs(filter) {
 
   const filtered = PUBS.filter(p => {
     if (filter === 'all')    return true;
-    if (filter === 'first')  return p.fa;
     if (filter === 'recent') return p.year >= 2024;
     if (filter === 'mid')    return p.year >= 2020 && p.year <= 2023;
     if (filter === 'early')  return p.year < 2020;
@@ -304,7 +302,6 @@ function renderPubs(filter) {
 
   list.innerHTML = filtered.map(p => {
     let cls = 'pub-item';
-    if (p.fa) cls += ' first-author';
 
     const numStr  = p.num ? `<span class="pub-num">[${p.num}]</span> ` : '<span class="pub-num">&#x25AA;</span> ';
     const volStr  = p.vol && p.vol !== '(Accepted)' ? `, ${p.vol}` : '';

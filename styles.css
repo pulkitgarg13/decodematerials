@@ -730,7 +730,6 @@ h2 {
 }
 
 .pub-item:hover { border-color: #93c5fd; }
-.pub-item.first-author { border-left: 3px solid var(--blue); }
 .pub-item.in-prep { border-left: 3px solid var(--gold); background: #fffdf5; }
 
 .pub-num { font-weight: 700; color: var(--gray-400); margin-right: .35rem; font-size: .8rem; }
