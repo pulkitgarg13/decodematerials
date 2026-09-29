@@ -216,13 +216,13 @@ nav {
 
 /* ===== SECTION WRAPPER ===== */
 section { padding: 2.25rem 1.5rem; }
+
+#home-about { padding-top: .75rem; }
 section.section-shaded { background: var(--gray-50); }
 
 .section-inner { max-width: var(--max-w); margin: 0 auto; }
 
 .section-header { margin-bottom: 2rem; }
-
-#home-about .section-header { text-align: center; }
 
 h2 {
   font-size: 1.65rem;
