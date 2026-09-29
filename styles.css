@@ -1059,21 +1059,18 @@ footer {
 footer a { color: #93c5fd; }
 footer p + p { margin-top: .4rem; }
 
-.footer-logos {
+.logo-strip {
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 2.5rem;
+  padding: 1.75rem 1.5rem;
 }
 
-.footer-logos img {
-  height: 68px;
-  background: var(--white);
-  padding: .4rem .8rem;
-  border-radius: 6px;
-}
+.logo-strip img { height: 84px; }
 
 /* ===== HAMBURGER BUTTON ===== */
 .nav-hamburger {
