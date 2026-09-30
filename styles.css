@@ -531,6 +531,15 @@ h2 {
 .teaser-grid { grid-template-columns: repeat(3, 1fr); }
 .teaser-grid .research-card h3 { text-align: center; }
 
+.thrust-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: .9rem;
+  display: block;
+}
+
 .thrust-more {
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
