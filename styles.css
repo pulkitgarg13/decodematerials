@@ -114,7 +114,7 @@ nav {
 
 /* ===== HOME BANNER ===== */
 .home-banner {
-  padding: 2rem 1.5rem 1rem;
+  padding: 2rem 1.5rem .5rem;
   text-align: center;
 }
 
@@ -217,7 +217,8 @@ nav {
 /* ===== SECTION WRAPPER ===== */
 section { padding: 2.25rem 1.5rem; }
 
-#home-about { padding-top: .75rem; }
+#home-about { padding-top: .25rem; }
+#home-about .section-header { margin-bottom: .75rem; }
 section.section-shaded { background: var(--gray-50); }
 
 .section-inner { max-width: var(--max-w); margin: 0 auto; }
